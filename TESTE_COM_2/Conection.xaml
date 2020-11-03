@@ -1,0 +1,48 @@
+﻿<Window x:Class="TESTE_COM_2.Conection"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Conection" Height="313" Width="519" Loaded="Window_Loaded">
+    <Grid>
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="43,40,0,0" Name="cb_Porta" VerticalAlignment="Top" Width="120" />
+        <Label Height="28" HorizontalAlignment="Left" Margin="43,11,0,0" Name="label1" VerticalAlignment="Top" Width="120">Label</Label>
+        <ComboBox Height="22" HorizontalAlignment="Right" Margin="0,40,85,0" Name="cb_Taxa" VerticalAlignment="Top" Width="120" SelectedIndex="5">
+            <ComboBoxItem>300</ComboBoxItem>
+            <ComboBoxItem>600</ComboBoxItem>
+            <ComboBoxItem>1200</ComboBoxItem>
+            <ComboBoxItem>2400</ComboBoxItem>
+            <ComboBoxItem>4800</ComboBoxItem>
+            <ComboBoxItem>9600</ComboBoxItem>
+        </ComboBox>
+        <Label Height="28" HorizontalAlignment="Right" Margin="0,11,85,0" Name="label2" VerticalAlignment="Top" Width="120">Label</Label>
+        <Button Height="23" Margin="220,0,202,49" Name="btn_Ok" VerticalAlignment="Bottom" Click="btn_Ok_Click">OK</Button>
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,0,85,49" Name="btn_Cancelar" VerticalAlignment="Bottom" Width="75" Click="btn_Cancelar_Click">Cancelar</Button>
+        <GroupBox Header="Paridade" HorizontalAlignment="Left" Margin="43,88,0,66" Name="groupBox1" Width="76">
+            <UniformGrid Height="88" Name="uniformGrid1" Rows="3" Width="59">
+                <RadioButton Height="16" Name="rB_Sem" Width="120">Sem</RadioButton>
+                <RadioButton Height="16" Name="rb_Par" Width="120">Par</RadioButton>
+                <RadioButton Height="16" Name="rB_Impar" Width="120">Impar</RadioButton>
+            </UniformGrid>
+        </GroupBox>
+        <GroupBox Header="Tamanho do texto" Margin="139.642,90,246.358,101" Name="groupBox2">
+            <UniformGrid Height="59" Name="uniformGrid2" Rows="2" Width="59">
+                <RadioButton Height="16" Name="rB_7bits" Width="120">7 bits</RadioButton>
+                <RadioButton Height="16" Name="rB_8bits" Width="120">8 bits</RadioButton>
+            </UniformGrid>
+        </GroupBox>
+        <GroupBox Header="Bits de Parada" HorizontalAlignment="Right" Margin="0,88,145,103" Name="groupBox3" Width="86">
+            <UniformGrid Height="56" Name="uniformGrid3" Rows="2" Width="54">
+                <RadioButton Height="16" Name="rB_1" Width="120">1</RadioButton>
+                <RadioButton Height="16" Name="rB_2" Width="120">2</RadioButton>
+            </UniformGrid>
+        </GroupBox>
+        <GroupBox Header="Modo" HorizontalAlignment="Right" Margin="0,90,39,110" Name="groupBox4" Width="76">
+            <UniformGrid Height="52" Name="uniformGrid4" Rows="2" Width="59">
+                <RadioButton Height="16" Name="rB_ASCII" Width="120">ASCII</RadioButton>
+                <RadioButton Height="16" Name="rB_RTU" Width="120">RTU</RadioButton>
+            </UniformGrid>
+        </GroupBox>
+        <TextBox Height="28" HorizontalAlignment="Left" Margin="66.127,0,0,21" Name="textBox1" VerticalAlignment="Bottom" Width="52.873">300</TextBox>
+        <Label Height="28" HorizontalAlignment="Left" Margin="19.743,0,0,23" Name="label4" VerticalAlignment="Bottom" Width="47.157">tempo</Label>
+        <Label Height="28" HorizontalAlignment="Left" Margin="119.036,0,0,21" Name="label5" VerticalAlignment="Bottom" Width="47.157">ms</Label>
+    </Grid>
+</Window>
