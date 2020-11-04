@@ -30,6 +30,7 @@ namespace TESTE_COM_2
             {
                 Window1 d = new Window1();
                 
+
                 d.taxaTrans = Convert.ToInt16(cb_Taxa.Text);
                 d.Comunicacao = cb_Porta.SelectedItem.ToString();
 

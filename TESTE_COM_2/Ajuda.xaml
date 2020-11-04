@@ -1,0 +1,8 @@
+﻿<Window x:Class="TESTE_COM_2.Ajuda"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Ajuda" Height="288" Width="474">
+    <Grid>
+        <Label Margin="56,50,78,63" Name="label1">Ajuda</Label>
+    </Grid>
+</Window>

@@ -3,23 +3,22 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="TESTE COM" Height="418" Width="621" Loaded="Window_Loaded">
     <Grid>
-        <ListBox HorizontalAlignment="Right" Margin="0,48,32,129" Name="listBox1" Width="264" />
         <Menu Height="22" Name="menu1" VerticalAlignment="Top">
             <MenuItem Header="Arquivo" Click="MenuArquivo_Click">
                 <MenuItem Header="Conectar" />
             </MenuItem>
             <MenuItem Header="Opções">
-                <MenuItem Header="Escrever Registro" />
-                <MenuItem Header="Escrever Coil" />
+                <MenuItem Header="Escrever Registro" Click="MenuEscreverReg_Click"/>         
+                <MenuItem Header="Escrever Coil" Click="MenuEscreverCoil_Click"/>
             </MenuItem>
             <MenuItem Header="Ajuda" />
         </Menu>
-        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,82,372,0" Name="txt_ID" VerticalAlignment="Top" Width="120">1</TextBox>
-        <Label Height="28" Margin="17,80,0,0" Name="label1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="114">ID Dispositivo:</Label>
-        <Label Height="28" Margin="17,136,502,0" Name="label2" VerticalAlignment="Top">Endereço:</Label>
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="107,136,0,0" Name="txt_End" VerticalAlignment="Top" Width="120">0</TextBox>
-        <TextBox HorizontalAlignment="Left" Margin="107,190,0,167" Name="txt_Tamanho" Width="120">10</TextBox>
-        <Label Margin="17,185,0,167" Name="label3" HorizontalAlignment="Left" Width="69">Tamanho:</Label>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="107,62.02,0,0" Name="txt_ID" VerticalAlignment="Top" Width="120">1</TextBox>
+        <Label Height="28" Margin="17,60.02,0,0" Name="label1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="114">ID Dispositivo:</Label>
+        <Label Height="28" Margin="17,116.02,0,0" Name="label2" VerticalAlignment="Top" HorizontalAlignment="Left" Width="80">Endereço:</Label>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="107,116.02,0,0" Name="txt_End" VerticalAlignment="Top" Width="120">0</TextBox>
+        <TextBox HorizontalAlignment="Left" Margin="107,170.02,0,186.98" Name="txt_Tamanho" Width="120">10</TextBox>
+        <Label Margin="17,165.02,0,186.98" Name="label3" HorizontalAlignment="Left" Width="69">Tamanho:</Label>
         <GroupBox Header="GroupBox" Height="102" Margin="17,0,0,44" Name="groupBox1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="270">
             <Grid Height="59" Name="grid1" Width="256">
                 <Grid.RowDefinitions>
@@ -32,5 +31,6 @@
         <Label Height="28" HorizontalAlignment="Left" Margin="17,0,0,8" Name="label4" VerticalAlignment="Bottom" Width="50">Tempo</Label>
         <TextBox Height="23" HorizontalAlignment="Left" Margin="73,0,0,11" Name="txt_Tempo" VerticalAlignment="Bottom" Width="50">100</TextBox>
         <Label Height="28" HorizontalAlignment="Left" Margin="127,0,0,8" Name="label5" VerticalAlignment="Bottom" Width="29">ms</Label>
+        <ListBox HorizontalAlignment="Right" Margin="0,60.02,21,0" Name="listBox1" Width="255" Height="113" VerticalAlignment="Top" />
     </Grid>
 </Window>

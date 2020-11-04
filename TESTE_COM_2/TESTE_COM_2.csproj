@@ -79,7 +79,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Ajuda.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Conection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EscreverCoil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EscreverRegistro.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -97,8 +109,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ajuda.xaml.cs">
+      <DependentUpon>Ajuda.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Coneccao.cs" />
     <Compile Include="Conection.xaml.cs">
       <DependentUpon>Conection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EscreverCoil.xaml.cs">
+      <DependentUpon>EscreverCoil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EscreverRegistro.xaml.cs">
+      <DependentUpon>EscreverRegistro.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

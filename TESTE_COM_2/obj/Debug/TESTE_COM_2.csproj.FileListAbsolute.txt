@@ -16,3 +16,9 @@ C:\Users\matheus.novais\Desktop\C#\TESTE_COM_2\TESTE_COM_2\bin\Debug\FtdAdapter.
 C:\Users\matheus.novais\Desktop\C#\TESTE_COM_2\TESTE_COM_2\bin\Debug\log4net.dll
 C:\Users\matheus.novais\Desktop\C#\TESTE_COM_2\TESTE_COM_2\bin\Debug\Modbus.dll
 C:\Users\matheus.novais\Desktop\C#\TESTE_COM_2\TESTE_COM_2\bin\Debug\Unme.Common.dll
+C:\Users\matheus.novais\Desktop\C#\TESTE_COM_2\TESTE_COM_2\obj\Debug\Ajuda.baml
+C:\Users\matheus.novais\Desktop\C#\TESTE_COM_2\TESTE_COM_2\obj\Debug\Ajuda.g.cs
+C:\Users\matheus.novais\Desktop\C#\TESTE_COM_2\TESTE_COM_2\obj\Debug\EscreverCoil.baml
+C:\Users\matheus.novais\Desktop\C#\TESTE_COM_2\TESTE_COM_2\obj\Debug\EscreverRegistro.baml
+C:\Users\matheus.novais\Desktop\C#\TESTE_COM_2\TESTE_COM_2\obj\Debug\EscreverCoil.g.cs
+C:\Users\matheus.novais\Desktop\C#\TESTE_COM_2\TESTE_COM_2\obj\Debug\EscreverRegistro.g.cs

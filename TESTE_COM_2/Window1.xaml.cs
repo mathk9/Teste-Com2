@@ -17,6 +17,7 @@ using System.Data;
 using System.IO;
 using System.IO.Ports;
 using System.Windows.Threading;
+using System.Threading;
 
 namespace TESTE_COM_2
 {
@@ -44,7 +45,7 @@ namespace TESTE_COM_2
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         public void StarTimer()
@@ -64,11 +65,19 @@ namespace TESTE_COM_2
             tela.ShowDialog();
         }
 
+
+
+        private void MenuEscreverCoil_Click(object sender, RoutedEventArgs e)
+        {
+            EscreverCoil tela = new EscreverCoil();
+            tela.ShowDialog();
+        }
+
         List<string> lista = new List<string>();
 
         private void TimerTick(object sender, EventArgs e)
         {
-            
+
             if (roda == true)
             {
                 using (SerialPort port = new SerialPort(Comunicacao))
@@ -97,15 +106,24 @@ namespace TESTE_COM_2
                     // read five registers		
                     ushort[] registers = master.ReadHoldingRegisters(slaveId, startAddress, numRegisters);
 
-
+                    listBox1.Items.Clear();
                     for (int i = 0; i < numRegisters; i++)
                     {
-                        lista.Add("Register " + (startAddress + i) + (registers[i]));
-
+                        //MessageBox.Show(registers[i].ToString());
+                        //listBox1.Items.Add("Register " + (startAddress + i) + (registers[i]));
+                        listBox1.Items.Add(registers[i].ToString());
+                        // lista.Add(registers[i].ToString());
                     }
+                    port.Close();
                 }
+                EscreverRegistro tela = new EscreverRegistro(Comunicacao, taxaTrans, bits, bitParada, pariedade, slaveId, startAddress, numRegisters);
+                tela.ShowDialog();
             }
-            listBox1.Items.Add(lista);
+
+        }
+        public void MenuEscreverReg_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
